@@ -107,6 +107,39 @@ edusphere/
 ├── index.php                # Redirects to login/dashboard
 ├── setup.php                # One-time admin account creator (delete after use)
 └── database.sql             # Full database schema & sample data
+## 📸 Screenshots
+
+### Login Page
+![Login Page](screenshots/Login%20page.jpg)
+
+### Dashboard
+![Dashboard](screenshots/Dashbord.jpg)
+
+### Students Module
+![Students](screenshots/Student.jpg)
+
+### Courses Module
+![Courses](screenshots/Course.jpg)
+
+### Attendance Module
+![Attendance](screenshots/Attendance.jpg)
+
+### Finance Module
+![Finance](screenshots/Finance.jpg)
+
+### Library Module
+![Library](screenshots/Library.jpg)
+
+### Events Module
+![Events](screenshots/Event.jpg)
+
+### Exams Module
+![Exams](screenshots/Exam.jpg)
+
+### Reports Module
+![Reports](screenshots/Report.jpg)
+
+---
 ## 📄 Project Documentation
 
 All design diagrams and documents are available in the `documents` folder:
