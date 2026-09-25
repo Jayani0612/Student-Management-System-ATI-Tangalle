@@ -149,7 +149,7 @@ All design diagrams and documents are available in the `documents` folder:
 *   **Sequence Diagram:** Step-by-step process flows.
 *   **Class Diagram:** System classes and their relationships.
 *   **Use Case Diagram:** User interactions with the system.
-*   **Scenario:** Detailed use case scenarios.
+*   **Scenario:** Detailed all digram scenarios.
 
 📁 [View diagram Folder](digram/)
 ---
