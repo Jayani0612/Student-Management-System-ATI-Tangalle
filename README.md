@@ -1,90 +1,109 @@
-# EduSphere – Student Management System
+<div align="center">
 
-Frontend: HTML, CSS, JavaScript (vanilla, no build step)
-Backend: PHP + MySQL (mysqli)
+# 🎓 EduSphere - Student Management System
+### 🏫 Advanced Technological Institute (ATI) - Tangalle
 
-## What's included
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-- **Login system** with PHP sessions (`login.php`, `logout.php`, session guard on every page)
-- **Dashboard** (`dashboard.php`) — stat cards pull **live counts** from MySQL (students, teachers,
-  active courses); charts (Student Growth, Attendance Analytics) use sample data via Chart.js;
-  Upcoming Events and Recent Activities are pulled live from the database.
-- **11 fully working modules**, each with search + Add/Edit/Delete through AJAX + prepared
-  MySQL statements, exactly like the Students module:
-  - **Students** — `students.php` + `api/students_api.php`
-  - **Teachers** — `teachers.php` + `api/teachers_api.php`
-  - **Courses** — `courses.php` + `api/courses_api.php`
-  - **Attendance** — `attendance.php` + `api/attendance_api.php`
-  - **Finance** — `finance.php` + `api/finance_api.php` (invoices/payments)
-  - **Library** — `library.php` + `api/library_api.php` (book catalog)
-  - **Hostel** — `hostel.php` + `api/hostel_api.php` (rooms)
-  - **Transport** — `transport.php` + `api/transport_api.php` (routes)
-  - **Timetable** — `timetable.php` + `api/timetable_api.php` (linked to Courses)
-- **Reports, Messages, Settings, Support** — still scaffolded placeholders (layout only).
+A comprehensive web-based Student Management System developed using PHP, HTML, and MySQL to manage all aspects of an educational institute.
 
-## Setup (XAMPP / WAMP / LAMP) — fresh install
+</div>
 
-1. Copy the `edusphere` folder into your server's web root
-   (e.g. `htdocs/edusphere` for XAMPP, or `www/edusphere` for WAMP).
-2. Start Apache + MySQL.
-3. Open **phpMyAdmin** and import `database.sql` (this creates the `edusphere` database and
-   ALL tables/sample data needed for every module above).
-4. Open `config/db.php` and update `DB_USER` / `DB_PASS` if your MySQL isn't the
-   default XAMPP `root` with no password.
-5. In your browser, visit `http://localhost/edusphere/setup.php` **once**.
-   This creates the default admin login:
-   - Username: `admin`
-   - Password: `admin123`
-6. **Delete `setup.php`** after running it (security).
-7. Go to `http://localhost/edusphere/login.php` and sign in.
+---
 
-## Already have the database set up from before?
+## 📌 Project Overview
+EduSphere is a full-featured management system designed for the Advanced Technological Institute (ATI) - Tangalle. It streamlines daily operations including student admissions, teacher management, course scheduling, attendance, finance, library, hostel, and transport.
 
-If you imported `database.sql` previously (before Finance/Library/Hostel/Transport/Timetable
-existed), just import **`database_updates.sql`** in phpMyAdmin — it only adds the new tables
-(`payments`, `books`, `hostel_rooms`, `transport_routes`, `timetable`) with `CREATE TABLE IF NOT
-EXISTS`, so it's safe to run even if some already exist. Then replace all the project files with
-this new copy.
+## ✨ Key Features
 
-## Folder structure
+<table>
+  <tr>
+    <td width="50%">
+      <h3>👨‍🎓 Academic Management</h3>
+      <ul>
+        <li><b>Students:</b> Add, update, and manage student records.</li>
+        <li><b>Teachers:</b> Manage teacher profiles, subjects, and departments.</li>
+        <li><b>Courses:</b> Manage the course catalog, credits, and instructors.</li>
+        <li><b>Attendance:</b> Track daily student attendance (Present, Absent, Late).</li>
+        <li><b>Timetable:</b> Manage the weekly class schedule.</li>
+        <li><b>Exams:</b> Schedule and manage examinations.</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🏢 Administration</h3>
+      <ul>
+        <li><b>Finance:</b> Manage fee invoices and payment statuses.</li>
+        <li><b>Library:</b> Manage the book catalog and copy availability.</li>
+        <li><b>Hostel:</b> Manage hostel rooms and occupancy.</li>
+        <li><b>Transport:</b> Manage transport routes, vehicles, and drivers.</li>
+        <li><b>Events:</b> Manage academic and campus events.</li>
+        <li><b>Reports:</b> Generate and export system data.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-```
+## 🛠️ Technologies Used
+
+*   **Frontend:** HTML5, CSS3, JavaScript (Vanilla), Font Awesome
+*   **Backend:** PHP (with `mysqli` prepared statements)
+*   **Database:** MySQL
+*   **Server:** XAMPP / WAMP / LAMP
+*   **Charting:** Chart.js (for dashboard visualizations)
+
+## 🚀 How to Install & Run
+
+Follow these steps to run the project on your local machine:
+
+1.  **Install a local server:** Download and install [XAMPP](https://www.apachefriends.org/) or WAMP.
+2.  **Move the project:** Copy the `edusphere` folder into your server's web root directory (e.g., `C:\xampp\htdocs\edusphere`).
+3.  **Start the server:** Open the XAMPP Control Panel and start **Apache** and **MySQL**.
+4.  **Import the database:** 
+    *   Open your browser and go to `http://localhost/phpmyadmin`.
+    *   Create a new database named `edusphere`.
+    *   Import the `database.sql` file from the project folder.
+    *   *(If you already have an old database, import `database_updates.sql` instead to add the new tables).*
+5.  **Configure the connection:** Open `config/db.php` and update `DB_USER` and `DB_PASS` if your MySQL credentials are different from the default XAMPP settings (`root` / no password).
+6.  **Create the admin account:** Visit `http://localhost/edusphere/setup.php` in your browser. This will create the default admin account.
+7.  **Log in:** Go to `http://localhost/edusphere/login.php` and use the following credentials:
+    *   **Username:** `admin`
+    *   **Password:** `admin123`
+8.  **Security:** **Delete `setup.php`** from your project folder after creating the admin account.
+
+## 📂 Folder Structure
+
+```text
 edusphere/
-├── api/
-│   └── students_api.php     # AJAX endpoint: list/get/create/update/delete
-├── assets/
-│   ├── css/style.css        # All styling
-│   └── js/                  # main.js, dashboard.js, students.js
-├── config/
-│   └── db.php               # MySQL connection settings
-├── includes/
-│   ├── header.php           # Top bar (search, notifications, user menu)
-│   ├── sidebar.php           # Left navigation
-│   └── session_check.php    # Login guard, included at top of every protected page
-├── dashboard.php
-├── students.php              # Full CRUD module
-├── teachers.php / courses.php / attendance.php / finance.php /
-│   library.php / hostel.php / transport.php / timetable.php /
-│   reports.php / messages.php / settings.php / support.php   (scaffolded)
-├── login.php / logout.php / index.php
-├── setup.php                 # One-time admin account creator (delete after use)
-└── database.sql              # Full schema + sample data
-```
-
-## Extending a placeholder module (e.g. Teachers)
-
-Follow the same pattern as Students:
-
-1. Add an `api/teachers_api.php` with `list` / `get` / `create` / `update` / `delete` actions
-   (copy `students_api.php` and change the table/fields).
-2. In `teachers.php`, replace the placeholder panel with a `data-table` + search box + modal,
-   copying the markup from `students.php`.
-3. Create `assets/js/teachers.js` copying `students.js`, changing the API URL and field names.
-
-## Security notes
-
-- Passwords are hashed with PHP's `password_hash()` / verified with `password_verify()`.
-- All database queries use prepared statements (protects against SQL injection).
-- Delete `setup.php` once the admin account is created.
-- Change the default `admin123` password after first login (add a "change password"
-  form to `settings.php` when you extend it).
+├── api/                     # AJAX endpoints for CRUD operations
+│   └── ...
+├── assets/                  # CSS, JS, and images
+│   ├── css/
+│   └── js/
+├── config/                  # Database connection
+│   └── db.php
+├── includes/                # Reusable components
+│   ├── header.php
+│   ├── sidebar.php
+│   └── session_check.php
+├── dashboard.php            # Main dashboard
+├── students.php             # Student management module
+├── teachers.php             # Teacher management module
+├── courses.php              # Course management module
+├── attendance.php           # Attendance tracking module
+├── finance.php              # Finance & payment module
+├── library.php              # Library management module
+├── hostel.php               # Hostel management module
+├── transport.php            # Transport management module
+├── timetable.php            # Timetable module
+├── events.php               # Events module
+├── exams.php                # Exams module
+├── reports.php              # Reports module
+├── login.php                # Login page
+├── logout.php               # Logout script
+├── index.php                # Redirects to login/dashboard
+├── setup.php                # One-time admin account creator (delete after use)
+└── database.sql             # Full database schema & sample data
