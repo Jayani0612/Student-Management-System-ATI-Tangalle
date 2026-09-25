@@ -119,3 +119,16 @@ All design diagrams and documents are available in the `documents` folder:
 *   **Scenario:** Detailed use case scenarios.
 
 📁 [View diagram Folder](digram/)
+---
+
+## 👨‍💻 Author
+
+*   **Jayani Prarthana**
+*   GitHub: [@Jayani0612](https://github.com/Jayani0612)
+*   LinkedIn: [Jayani Prarthana](https://www.linkedin.com/in/jayani-prarthana-879615388)
+
+---
+
+<div align="center">
+  <i>Thank you for checking out EduSphere! ⭐ Star this repository if you found it helpful.</i>
+</div>
