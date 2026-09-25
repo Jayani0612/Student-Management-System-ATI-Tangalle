@@ -107,3 +107,15 @@ edusphere/
 ├── index.php                # Redirects to login/dashboard
 ├── setup.php                # One-time admin account creator (delete after use)
 └── database.sql             # Full database schema & sample data
+## 📄 Project Documentation
+
+All design diagrams and documents are available in the `documents` folder:
+
+*   **ER Diagram:** Database structure and relationships.
+*   **DFD (Data Flow Diagram):** Data flow within the system.
+*   **Sequence Diagram:** Step-by-step process flows.
+*   **Class Diagram:** System classes and their relationships.
+*   **Use Case Diagram:** User interactions with the system.
+*   **Scenario:** Detailed use case scenarios.
+
+📁 [View diagram Folder](digram/)
